@@ -21,5 +21,11 @@ docker container ls
 docker container la -a
 ```
 
-
+* List all images:
+```
+docker image ls
+```
+```
+docker image ls -a
+```
 
