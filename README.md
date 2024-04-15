@@ -29,3 +29,17 @@ docker image ls
 docker image ls -a
 ```
 
+* Create Volumes
+```
+docker volume create my-volume
+```
+
+* Run Container with that volume
+```
+docker run  -it --rm -v my-volume:/my-data ubuntu:22.04
+```
+
+* Bind Local storage to the containers
+```
+docker run  -it --rm -v ${PWD}/my-data:/my-data ubuntu:22.04
+```
