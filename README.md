@@ -45,17 +45,27 @@ docker run  -it --rm -v ${PWD}/my-data:/my-data ubuntu:22.04
 ```
 * Docker compose file run
 ```
-docker compose up
+docker-compose up
 ```
 
 * Delete all the resource created by docker compose.
 ```
-docker compose down
+docker-compose down
 ```
 
 * Run docker compose in background
 ```
-docker compose up -d
+docker-compose up -d
+```
+
+* Start stopped dokcer compose resource:
+```
+docker-compose start
+```
+
+* Run Docker compose file with custoome name
+```
+docker-compoose -f file.yaml up/down/start
 ```
 
 * Docker network drivers
