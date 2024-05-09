@@ -1,4 +1,4 @@
-# This Repo ccomtian solution to some of the docker compose issue.
+# This Repo contians solution to some of the docker compose issue.
 
 ## `depends_on` property:
 - Sometimes, even after using the `depensds_on` property, out next continer is started because, depends on command by default check wether cotainer is running or not.
@@ -35,3 +35,4 @@ https://stackoverflow.com/questions/31746182/docker-compose-wait-for-container-x
 https://mariadb.org/mariadb-server-docker-official-images-healthcheck-without-mysqladmin/
 https://github.com/peter-evans/docker-compose-healthcheck
 https://mariadb.com/kb/en/using-healthcheck-sh/
+https://stackoverflow.com/questions/42567475/docker-compose-check-if-mysql-connection-is-ready
