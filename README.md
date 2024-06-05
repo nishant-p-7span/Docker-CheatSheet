@@ -30,6 +30,21 @@
   ```
   > So, Now on contaier will, start only when required container up and running with healthy health status.
 
+
+
+# Healthcheck for `mysql` container.
+```
+healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+```
+- Depends on functions:
+```
+depends_on:
+    rabbit:
+      condition: service_healthy
+```
 ## Referances:
 https://stackoverflow.com/questions/31746182/docker-compose-wait-for-container-x-before-starting-y
 https://mariadb.org/mariadb-server-docker-official-images-healthcheck-without-mysqladmin/
