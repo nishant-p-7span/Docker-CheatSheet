@@ -52,6 +52,10 @@ docker-compose up
 ```
 docker-compose down
 ```
+- To delete the stack, with persistent volumes.
+```
+docker-compose rm -v
+```
 
 * Run docker compose in background
 ```
